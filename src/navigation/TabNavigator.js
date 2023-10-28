@@ -4,25 +4,25 @@ import Home from '../views/Home';
 import Cart from '../views/Cart';
 import Profile from '../views/Profile';
 import { Colors } from '../styles/colors';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons'; // Make sure to install this package
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Tab = createBottomTabNavigator();
 
 function TabNavigator() {
   return (
     <Tab.Navigator
-      tabBarOptions={{
-        activeTintColor: Colors.blue,
-        labelStyle: {
-          fontSize: 10, // Set the font size to 10px
-          fontFamily: 'Product Sans', // Use the 'Product Sans' font
+      screenOptions={{
+        tabBarActiveTintColor: Colors.blue,
+        tabBarLabelStyle: {
+          fontSize: 10,
+          fontFamily: 'Product Sans',
           fontWeight: '400',
           lineHeight: 12,
           letterSpacing: 0,
           textAlign: 'center',
         },
-        style: {
-          backgroundColor: Colors.black,
+        tabBarStyle: {
+          display: 'flex',
         },
       }}
     >
@@ -76,3 +76,4 @@ function TabNavigator() {
 }
 
 export default TabNavigator;
+  
