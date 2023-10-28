@@ -16,7 +16,7 @@ const SplashScreen = ({ navigation }) => {
   }
 
   // After the splash screen duration, navigate to the DrawerNavigator
-  navigation.navigate('TabNavigator');
+  navigation.navigate('OnBoarding');
   return null; // This will prevent rendering anything after navigation
 };
 
